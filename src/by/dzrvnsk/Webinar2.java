@@ -35,7 +35,7 @@ public class Webinar2 {
             }
         }*/
         // Task 3
-        int[] ar = {3, 6, 67, 1, 5, 99, 0};
+/*        int[] ar = {3, 6, 67, 1, 5, 99, 0};
         System.out.println("Array:");
         for (int value : ar) {
             System.out.print(value + "  ");
@@ -51,6 +51,27 @@ public class Webinar2 {
         for (int value : ar) {
             System.out.print(value + "  ");
         }
-        System.out.println();
+        System.out.println(); */
+        // Task 4
+        int a = 19;
+        int a1 = a;
+        boolean flag = true;
+        while (flag) {
+            int a2 = a1 / 10;
+            if (a2 == 0) {
+                break;
+            }
+            if ((a1 % 10) < (a2 % 10)) {
+                flag = false;
+            }
+            a1 = a1 / 10;
+        }
+        if (flag && (a / 10 != 0)) {
+            System.out.println("число " + a +
+                    " образует возрастающую последовательность");
+        } else {
+            System.out.println("число " + a +
+                    " не образует возрастающую последовательность");
+        }
     }
 }
