@@ -53,7 +53,7 @@ public class Webinar2 {
         }
         System.out.println(); */
         // Task 4
-        int a = 19;
+/*        int a = 19;
         int a1 = a;
         boolean flag = true;
         while (flag) {
@@ -72,6 +72,27 @@ public class Webinar2 {
         } else {
             System.out.println("число " + a +
                     " не образует возрастающую последовательность");
+        }*/
+        // Task 5
+        int[] ar = {3, 6, 67, 1, 5, 99, 0};
+        System.out.println("Array:");
+        for (int value : ar) {
+            System.out.print(value + "  ");
         }
+        System.out.println();
+        for (int i = 0; i < ar.length; i++) {
+            for (int j = i; j < ar.length; j++) {
+                if (ar[i] < ar[j]) {
+                    int t = ar[i];
+                    ar[i] = ar[j];
+                    ar[j] = t;
+                }
+            }
+        }
+        System.out.println("New array:");
+        for (int value : ar) {
+            System.out.print(value + "  ");
+        }
+        System.out.println();
     }
 }
