@@ -3,7 +3,7 @@ package by.dzrvnsk;
 public class Webinar2 {
     public static void main(String[] args) {
         // Task 2
-        float[] ar = {2, 3, 5, 7, 6, 5, 7, 3, 7, 20};
+/*        float[] ar = {2, 3, 5, 7, 6, 5, 7, 3, 7, 20};
         boolean[] boolAr = new boolean[ar.length];
         for (int i = 0; i < ar.length; i++) {
             System.out.print("ar[" + i + "] = " + ar[i] + "\t  ");
@@ -33,6 +33,24 @@ public class Webinar2 {
                 }
                 System.out.println("значение " + ar[i] + " повторяется " + repeated + " " + text);
             }
+        }*/
+        // Task 3
+        int[] ar = {3, 6, 67, 1, 5, 99, 0};
+        System.out.println("Array:");
+        for (int value : ar) {
+            System.out.print(value + "  ");
         }
+        System.out.println();
+
+        for (int i = 0; i < ar.length / 2; i++) {
+            int temp = ar[i];
+            ar[i] = ar[ar.length - i - 1];
+            ar[ar.length - i - 1] = temp;
+        }
+        System.out.println("New array:");
+        for (int value : ar) {
+            System.out.print(value + "  ");
+        }
+        System.out.println();
     }
 }
