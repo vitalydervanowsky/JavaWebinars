@@ -1,10 +1,8 @@
 package by.dzrvnsk;
 
-import java.util.Scanner;
-
 public class Webinar3 {
     // Task 3
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         int length = 5;
         int[] a;
         Webinar3 w = new Webinar3();
@@ -45,5 +43,16 @@ public class Webinar3 {
                 }
             }
         }
+    }*/
+
+    // Task 4
+    public static void main(String[] args) {
+        Webinar3 w = new Webinar3();
+        int news = 45;
+        System.out.println((int)w.paginate(news));
+    }
+    public double paginate(int a) {
+        double newsOnPage = 10;
+        return Math.ceil(a / newsOnPage);
     }
 }
